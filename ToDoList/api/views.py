@@ -8,3 +8,6 @@ def index(request, id):
     
 def home(request):
     return render(request, "api/home.html", {})
+
+def create(request):
+    return render(request, "api/create.html", {})
