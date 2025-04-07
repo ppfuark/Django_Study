@@ -2,7 +2,9 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import *
 
-def index(request, name):
-    todo_list = ToDoList.objects.get(name=name)
-    item = todo_list.item_set.get(id=1)
-    return HttpResponse("%s</br>%s" % (todo_list.name, item.text))
+def index(request, id):
+    todo_list = ToDoList.objects.get(id=id)
+    return render(request, "api/list.html", {"todo_list": todo_list})
+    
+def home(request):
+    return render(request, "api/home.html", {})

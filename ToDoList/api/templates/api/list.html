@@ -1,0 +1,15 @@
+{%extends "api/base.html"%}
+
+{%block title%}List{% endblock %}
+{%block content%}
+    <h1>{{todo_list.name}}</h1>
+    <ul>
+        {% for item in todo_list.item_set.all %}
+            {%if item.complete == True %}
+                <li>{{item.tetx}} - Complete</li>
+            {%else %}
+                <li>{{item.tetx}} - Incomplete</li>
+            {%endelse%}
+        {%endfor%}
+    </ul>
+{% endblock %}
