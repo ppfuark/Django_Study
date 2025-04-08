@@ -14,8 +14,8 @@ The goal of this project is to explore the functionalities of Django and learn t
 ├── .gitignore
 ├── README.md
 └── ToDoList
-    ├── accounts **-- APP**
-    ├── api **-- APP**
+    ├── accounts -> APP
+    ├── api -> APP
     ├── backend 
     ├── db.sqlite3
     ├── manage.py
