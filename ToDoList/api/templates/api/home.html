@@ -7,16 +7,16 @@ Home page
 {%block content%}
 <h1>Home page</h1>
 
-<div>
+<div >
     {% if todo_lists|length > 0 %}
         {% for todo_list in todo_lists %}
             <ul>
-                <li>
-                    {{ todo_list.name }}
+                <li style="display: flex; flex-direction: column; justify-content: flex-start; align-items:baseline;">
+                    <a href="/{{ todo_list.id }}/">{{ todo_list.name }}</a>
                     <ul>
                         {% for item in todo_list.item_set.all %}
                             <li>
-                                {{ item.text }}
+                               {{ item.text }}
                             </li>
                         {% endfor %}
                     </ul>
