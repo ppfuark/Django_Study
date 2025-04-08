@@ -8,6 +8,21 @@ The goal of this project is to explore the functionalities of Django and learn t
 
 ## How to Run the Project 💻
 
+## Project Structure 📁
+
+```
+├── .gitignore
+├── README.md
+└── ToDoList
+    ├── accounts **-- APP**
+    ├── api **-- APP**
+    ├── backend 
+    ├── db.sqlite3
+    ├── manage.py
+    ├── requirements.txt
+    └── static
+```
+
 ### Backend 👨‍💻
 
 1. Clone the repository:
