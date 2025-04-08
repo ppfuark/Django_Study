@@ -1,10 +1,10 @@
-# Django Study -> Task List System 🚀
+# Django Study 🚀
 
 This repository is a study project dedicated to the **Django** framework, which allows for rapid and efficient web application development using Python.
 
 ## Objective 🎯
 
-The goal of this project is to explore the functionalities of Django and learn to develop a web application for managing a task list.
+The goal of this project is to explore the functionalities of Django and learn to develop a web application.
 
 ## How to Run the Project 💻
 
