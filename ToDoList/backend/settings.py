@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'api.apps.ApiConfig',
     'accounts.apps.AccountsConfig',
     
-    'rest_framework'
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
