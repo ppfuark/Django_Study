@@ -34,11 +34,14 @@ def create(request):
     if request.method == "POST":
         form = CreateNewList(request.POST)
         if form.is_valid():
-            todo_list = ToDoList.objects.create(
-                name=form.cleaned_data['name'] 
-            )
-            return redirect("list", id=todo_list.id)
+            name = form.cleaned_data['name']
+            new_list = request.user.todo_list_set.create(name=name)
+            
+            return redirect("list", id=new_list.id)
     else:    
         form = CreateNewList()
     
     return render(request, "api/create.html", {"form": form})
+
+def view(request):
+    return render(request, "api/view.html", {})

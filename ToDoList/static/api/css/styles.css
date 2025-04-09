@@ -327,7 +327,14 @@ a{
 }
 
 #content form input {
-    /* Input field styling */
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+#content form input[type="text"] {
+    margin-top: 0.5rem;
     width: 100%;
     padding: 12px;
     border: 1px solid #ddd;
@@ -389,4 +396,8 @@ a{
     #content form {
         padding: 1.5rem;
     }
+}
+
+li input{
+    width: 20%;
 }
