@@ -130,5 +130,6 @@ STATICFILES_DIRS = [
 # Diretório onde os arquivos estáticos serão armazenados após o comando collectstatic
 STATIC_ROOT = BASE_DIR / 'staticfiles'  # Só é necessário para produção
 
+LOGIN_URL = '/auth/login/'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = '/auth/login'

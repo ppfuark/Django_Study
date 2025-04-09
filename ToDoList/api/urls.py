@@ -5,5 +5,4 @@ urlpatterns = [
     path('', views.home, name='home'),
     path('<int:id>/', views.index, name='list'),
     path('create/', views.create, name='create'),
-    path('view/', views.view, name='view'),
 ]
